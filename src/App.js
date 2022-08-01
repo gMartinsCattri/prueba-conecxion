@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     async function getUsers() {
-      const response = await fetch('http://74.208.169.34:8081/restaurant/all', {
+      const response = await fetch('https://pokeapi.co/api/v2/pokemon/', {
         method: 'GET',
         headers: {
           accept: 'application/json',
@@ -15,13 +15,13 @@ function App() {
 
       const data = await response.json();
 
-      setUsers(data);
+      setUsers(data.results);
       console.log("users", users)
       console.log("status", data.status)
     }
 
     getUsers();
-  }, [users]);
+  }, []);
 
   console.log(users);
 
