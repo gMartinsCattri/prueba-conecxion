@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 
 const App = () => {
-  const [name, setName] = useState([]);
+  const [name, setName] = useState([{}]);
 
   useEffect(() => {
     fetch('http://74.208.169.34:8081/restaurant/all') 
@@ -20,7 +20,7 @@ const App = () => {
   {name.map(user => (
         <div key={user}>
           <h2>
-            Name: {user.name} id: {user.url}
+            Name: {user.name} id: {user.id}
           </h2>
         </div>
       ))}
