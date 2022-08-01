@@ -7,7 +7,7 @@ const App = () => {
   useEffect(() => {
     fetch('http://74.208.169.34:8081/restaurant/all') 
     .then(res => res.json()) 
-    .then(res => setName(res.results));
+    .then(res => setName(res));
     console.log("name", name)
     
   }, [name]); 
