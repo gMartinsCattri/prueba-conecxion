@@ -21,7 +21,7 @@ function App() {
     }
 
     getUsers();
-  }, []);
+  }, [users]);
 
   console.log(users);
 
