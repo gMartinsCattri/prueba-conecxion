@@ -5,7 +5,7 @@ const App = () => {
   const [name, setName] = useState([{}]);
 
   useEffect(() => {
-    fetch('http://74.208.169.34:8081/restaurant/all') 
+    fetch('curl http://74.208.169.34:8081/restaurant/all') 
     .then(res => res.json()) 
     .then(res => setName(res));
     console.log("name", name)
