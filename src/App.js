@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     async function getUsers() {
-      const response = await fetch('https://pokeapi.co/api/v2/pokemon/', {
+      const response = await fetch('http://74.208.169.34:8081/restaurant/all', {
         method: 'GET',
         headers: {
           accept: 'application/json',
@@ -29,7 +29,7 @@ function App() {
       {users.map(user => (
         <div key={user}>
           <h2>
-            Name: {user.name} {user.url}
+            Name: {user.name} {user.id}
           </h2>
         </div>
       ))}
