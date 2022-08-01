@@ -15,7 +15,7 @@ function App() {
 
       const data = await response.json();
 
-      setUsers(data.results);
+      setUsers(data);
       console.log("users", users)
       console.log("status", data.status)
     }
