@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 
 const App = () => {
-  const [name, setName] = useState([]);
+  const [name, setName] = useState([{}]);
 
   useEffect(() => {
     fetch('http://74.208.169.34:8081/restaurant/all') 
