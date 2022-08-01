@@ -5,15 +5,15 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-     function getUsers() {
-      const response =  fetch('http://74.208.169.34:8081/restaurant/all', {
+    async function getUsers() {
+      const response = await fetch('http://74.208.169.34:8081/restaurant/all', {
         method: 'GET',
         headers: {
           accept: 'application/json',
         },
       });
 
-      const data =  response.json();
+      const data = await response.json();
 
       setUsers(data);
     }
