@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   // ✅ State is initialized to `[]`
-  fetch('http://74.208.169.34:8081/restaurant/all')
+  fetch('https://pokeapi.co/api/v2/pokemon/')
 .then(response => response.json())
 .then(data => {
     console.log(data)
