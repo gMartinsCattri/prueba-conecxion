@@ -8,7 +8,6 @@ function App() {
     async function getUsers() {
       const response = await fetch('http://74.208.169.34:8081/restaurant/all', {
         method: 'GET',
-        mode: 'no-cors',
         headers: {
           accept: 'application/json',
         },
@@ -18,7 +17,7 @@ function App() {
 
       setUsers(data);
       console.log("users", users)
-      console.log("status", data.status)
+      console.log("status", response)
     }
 
     getUsers();
