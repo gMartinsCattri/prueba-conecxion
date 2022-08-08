@@ -1,42 +1,26 @@
-import {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
+import './App.css';
 
-function App() {
-  // ✅ State is initialized to `[]`
-  const [users, setUsers] = useState([]);
+const App = () => {
+  const [name, setName] = useState([{}]);
 
   useEffect(() => {
-    async function getUsers() {
-      const response = await fetch('http://74.208.169.34:2020/images', {
-        method: 'GET',
-        headers: {
-          accept: 'application/json',
-        },
-      });
+    fetch('http://74.208.169.34:8081/restaurant/all') 
+    .then(res => res.json()) 
+    .then(res => setName(res));
+    console.log("name", name)
+    
+  }, [name]); 
 
-      const data = await response.json();
-
-      setUsers(data);
-      console.log("users", users)
-      console.log("status", response)
-    }
-
-    getUsers();
-  }, [users]);
-
-  console.log(users);
-
-  return (
-    <div>
-      {/* ✅ users is `[]`, until API responds */}
-      {users.map(user => (
+  return <div className="users">
+  {name.map(user => (
         <div key={user}>
           <h2>
-            Name: {user}
+            Name: {user.name} id: {user.id}
           </h2>
         </div>
       ))}
-    </div>
-  );
+</div>;
 }
 
 export default App;
