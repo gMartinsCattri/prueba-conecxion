@@ -13,7 +13,7 @@ const App = () => {
     .then(res => setName(res));
     console.log("name", name)
     
-  }, []); 
+  }, [name]); 
 
   return <><div className="users">
     {name.map(user => (
