@@ -1,38 +1,1507 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-app{
+  background-color: rgba(78, 84, 114, 1);
+  width: 100%;
+  height: 11vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.app-alfred{
+  background-color: rgba(40, 43, 58, 1);
+  width: 80%;
+  height: 80%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid transparent;
+  border-radius: 50px;
+
+}
+
+.offcanvas-body
+.container-app-off-canvas-body{
+  height: 5vh !important;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.canvas-app-alfred{
+  width: 15% !important;
+  height: 80%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.canvas-imagem-app-alfred{
+  width: 137px !important; 
+}
+
+.image-app-alfred{
+  width: 272px;
+}
+
+/* .carousel-control-next-icon{
+  background-image: url("/maps-icon.png") !important;
+  width: 250px !important;
+  height: 250px !important;
+} */
+
+.container-aplazo{
+  background-color: rgba(78, 84, 114, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.aplazo-alfred{
+  height: 100px;
+  width: 30%;
+  background-color: #292b3a !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius:20px !important;
+  font-size: 40px !important;
+  font-weight: bold !important;
+}
+.dropdown-menu-aplazos{
+  height:11vh !important;
+}
+.aplazo-logo{
+  width: 300px;
+}
+
+.offcanvas-body{
+  background-color: rgba(78, 84, 114, 1);
+}
+
+/* .carousel-control-prev-icon{
+  background-image: url("/mesa-redonda.png") !important;
+  width: 250px !important;
+  height: 250px !important;
+  background-color: red !important;
+  background-size: 180px !important;
+  border-radius: 100px;
+} */
+.carousel-control-next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+iframe{
+  width: 100%;
+  height: 89vh;
+  border-radius: 120px;
+  box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -7px rgb(0 0 0 / 20%);
+}
+
+.visita-virtual{
+  width: 100%;
+  height: 100vh;
+}
+
+.flex-slider-custom{
+  width: 100%;
+  height: 100vh;
+}
+
+
+#kiko-slider{
+  font-family: sans-serif;
+  margin: auto;
+  background-color: white;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+ }
+ 
+ #kiko-slider > ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+ }
+ 
+ #kiko-slider > ul.slider{
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 300px;
+ }
+ 
+ #kiko-slider > ul.slider h1{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, -50%);
+ }
+ 
+ #kiko-slider > ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+ }
+ 
+ #kiko-slider > ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+ }
+ 
+ #kiko-slider > ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+ }
+ 
+ #kiko-slider > ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+ }
+ 
+ #kiko-slider > .menu{
+  text-align: center;
+  margin: 20px;
+ }
+ 
+ #kiko-slider > .menu li{
+  display: inline-block;
+  text-align: center;
+ }
+ 
+ #kiko-slider > .menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+ }
+ 
+ 
+ 
+ .slide-contenedor{
+     max-width:100%;
+     max-height: 100vh;
+     width: 100%;
+     height:100vh;
+     position: relative;
+     overflow: hidden;
+     /* margin: auto; */
+ }
+ 
+ .miSlider.fade{
+     height: 100vh;
+ }
+ 
+ /* .miSlider{
+     display: none;
+     transition: 2s;
+     max-height: 100vh;
+ } */
+ 
+ .miSlider img{
+     width: 100%;
+     max-height: 100vh;
+     height: inherit;
+     object-fit: fill;
+     vertical-align: top;
+     transition: 2s;
+ }
+ 
+ .direcciones{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 20px;
+ }
+ 
+ .direcciones a{
+     color: #fff;
+     display: inline-block;
+     padding: 20px;
+     text-decoration: none;
+ }
+ 
+ .direcciones a:hover{
+     background: rgba(0, 0, 0, .5);
+     transition: .5s;
+ }
+ 
+ .barras{
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-bottom:15px;
+ }
+ 
+ .barra{
+     cursor: pointer;
+     height:2px;
+     width: 25px;
+     margin: 0 2px;
+     background: #dcdde1;
+     display: inline-block;
+     margin-left: 3px;
+ }
+ .carousel-item{
+     height: 100vh;
+ }
+ 
+ 
+ .slider-images{
+     height: 91vh;
+     width: 100%;
+     background-color: rgb(0 0 0 / 50%);
+     border-radius: 120px;
+     box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -7px rgb(0 0 0 / 20%);
+ }
+ 
+ .fade{
+     animation-name: fade;
+     animation-duration: 5.5s;    
+ }
+ 
+
+.modal-dialog{
+  display: flex;
+  width: 100vh;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  width: 50vh !important;
+  height: 80vh !important;
+}
+
+.modal-body{
+  width: 100vh;
+}
+
+ @keyframes fade {
+     from {opacity: .4;}
+     to{opacity:1;}
+ }
+.advertisment-image{
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 55px !important;
+  box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -7px rgb(0 0 0 / 20%);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#btn-mas{
+  display: none;
+}
+.container{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.redes a, .btn-mas label{
+  display: block;
+  text-decoration: none;
+  background: #cc2b2b;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+  transition: all 500ms ease;
+}
+.redes a:hover{
+  background: #fff;
+  color: #cc2b2b;
+}
+.redes a{
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.btn-mas label{
+  cursor: pointer;
+  background: #f44141;
+  font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+  transform: rotate(135deg);
+  font-size: 25px;
+}
+
+
+
+.circular-menu {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 140px;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.open.circle {
+  opacity: 1;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.circle button {
+  text-decoration: none;
+  color: white;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+
+}
+
+.circle a:hover {
+  color: #eef;
+}
+
+.menu-button {
+  position: absolute;
+  
+  text-decoration: none;
+  text-align: center;
+  color: #444;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  padding: 10px;
+  background: #dde;
+  width: 150px; 
+  height: 150px; 
+  border: 2px solid #555; 
+  -moz-border-radius: 0 100px 100px 0;
+  -webkit-border-radius: 0 100px 100px 0;
+  border-radius: 100px;
+    background-color: #fff;
+    
+    box-shadow: 10px 20px 30px rgb(0 0 0 / 75%);
+    
+}
+
+.menu-button:hover {
+  background-color: #eef;
+}
+
+/* Author stuff */
+h1.author {
+  text-align:center;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1.author a {
+  color: #348;
+  text-decoration:none;
+}
+
+h1.author a:hover {
+  color: #ddd;
+} 
+
+/* used on MenuAlfred */
+/* .app0{
+  left: 78% !important;
+  position: absolute;
+  top: -27% !important;
+  }
+  .app1{
+  left: 6% !important;
+  top: auto !important;
+  position: absolute;
+  bottom: 106%;
+  }
+  .app2{
+  left: 1% !important;
+  top: 107% !important;
+  position: absolute;
+  }
+  .app3{
+  left: 74% !important;
+  top: 57% !important;
+  position: absolute;
+  }
+  .app4{
+  left: 20% !important;
+  top: 7% !important;
+  } */
+
+  .carousel-indicators{
+      position: inherit !important;
+  }
+
+  .carousel-indicators [data-bs-target]{
+      width: 150px !important;
+      height: 150px !important;
+      background-color: transparent !important;
+      margin: 30px;
+      padding: 20px;
+      border: 10px solid white !important;
+  }
+
+  .carousel.pointer-event{
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-inner{
+    width: 95%;
+    display: flex;
+    padding-top:80px;
+  }
+
+  .carouselExampleIndicators{
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-slide img {
+    width: 70%;
+    display: block;
+    margin-right: 20%;
+}
+
+.swiper-slide{
+   font-size: 4rem;
+   width: 29.75%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   color: #fff;
+   background-size: contain;
+   border-radius: 30px;
+}
+
+.swiper-content-generals{
+  display: flex;
+  justify-content: flex-end;
+  width: 3800px !important;
+  z-index: 1;
+}
+.swiper-content-general{
+width: 72%;
+}
+
+#carouselExampleIndicators{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.dragBtn {
+  position: absolute;
+
+}
+
+.dragBtn {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: darkcyan;
+  color: #fff;
+  border: none;
+  font-size: 1.4em;
+  cursor: pointer;
+  box-shadow: 5px 5px 40px #000;
+  outline: none;
+  top: 10%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content{
+  height: 100% !important ;
+  width: 2160px !important;
+  border-radius: 0;
+}
+
+.btn-bootstrap-modal{
+  margin-left: 200px;
+}
+
+.modal-header{
+  position: absolute !important;
+  width: 100% !important;
+}
+
+.modal-body{
+  padding: 0 !important;
+}
+
+.modal-dialog{
+  margin-top: 0 !important;
+}
+
+.slider-alfred{
+  height: 94vh
+}
+
+
+
+.video-wrapped {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(15px);
+  object-fit: cover;
+  height: 100%;
+}
+.video-wrapper {
+  border: 2px solid #000;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.appsvip {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.restaurante {
+  float: left;
+  width: 50%;
+  height: 1637px;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 25.5% 10.5%;
+}
+
+.circle .app1{
+  /*left: 99% !important;
+  top: 2.5% !important;*/
+  border-radius: 100%;
+  background: #592d15;
+  border: solid #f7ba12 5px;
+}
+
+.circular-menu {
+  position: absolute;
+}
+
+.circular-menu .floating-btn {
+  display: block;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 hsl(0deg 0% 0% / 26%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 3.9;
+  cursor: pointer;
+  outline: 0;
+  overflow: hidden;
+}
+
+.floating-btn img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.circular-menu.r-active .floating-btn {
+  box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
+}
+
+.circular-menu .floating-btn .r-active {
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
+}
+
+.circular-menu .floating-btn i {
+  font-size: 1.3em;
+  transition: transform .2s;
+}
+
+.circular-menu.r-active .floating-btn i {
+  transform: rotate(-45deg);
+}
+
+.circular-menu:after {
+  display: block;
+  content: ' ';
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  background-color: transparent;
+  transition: all .3s ease;
+}
+
+.circular-menu.r-active:after {
+  transform: scale3d(5.5, 5.5, 1);
+  transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+}
+
+.circular-menu .items-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.circular-menu .menu-item {
+  position: absolute;
+  top: 6em;
+  right: 6.2em;
+  z-index: -1;
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 35px;
+  width: 140px;
+  height: 140px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: #5bad09;
+  transition: transform .3s ease, background .2s ease;
+}
+
+.circular-menu .menu-item:hover {
+  background-color: hsla(0,0%,0%,.3);
+}
+
+.circular-menu.r-active .menu-item {
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.circular-menu.r-active .menu-item:nth-child(1) {
+  transform: translate3d(0,-10.5em,0);
+  z-index: 1;
+}
+
+.circular-menu.r-active .menu-item:nth-child(2) {
+  transform: translate3d(-5.5em,-9.5em,0);
+  z-index: 1;
+}
+
+.circular-menu.r-active .menu-item:nth-child(3) {
+  transform: translate3d(-10em,-5.5em,0);
+  z-index: 1;
+}
+
+.circular-menu.r-active .menu-item:nth-child(4) {
+  transform: translate3d(-11.5em,0,0);
+  z-index: 1;
+}
+
+.circular-menu.circular-menu-1.r-active .floating-btn i {
+  transform: rotate(90deg);
+}
+
+.circular-menu.circular-menu-2.r-active .floating-btn i {
+  transform: rotate(90deg);
+}
+
+.circular-menu.circular-menu-3.r-active .floating-btn i {
+  transform: rotate(90deg);
+}
+
+.r-hora2, .r-hora3, .r-hora4, .r-hora5, .r-hora10, .r-hora11 {
+  display: none !important;
+}
+.r1-hora1, .r1-hora3, .r1-hora4, .r1-hora8, .r1-hora9 {
+  display: none !important;
+}
+.r2-hora3, .r2-hora6, .r2-hora7, .r2-hora11, .r2-hora12 {
+  display: none !important;
+}
+
+.fa-bars:before{
+  display: none !important;
+}
+
+.menu-restaurant{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant.active .tooglees{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+
+.menu-restaurant2{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant2 li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant2.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees2{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant2.active .tooglees2{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container2{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa2{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.container-general{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.menu-restaurant3{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant3 li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant3.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees3{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant3.active .tooglees3{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container3{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa3{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+
+.menu-restaurant4{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant4 li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant4.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees4{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant4.active .tooglees4{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container4{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa4{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant5{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant5 li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant5.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees5{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant5.active .tooglees5{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container5{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa5{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+.menu-restaurant6{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant6 li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant6.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees6{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant6.active .tooglees6{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container6{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa6{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+.menu-restaurant7{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant7 li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant7.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees7{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant7.active .tooglees7{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container7{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa7{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+.menu-restaurant8{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-restaurant8 li{
+  position: absolute;
+  list-style: none;
+  left: 0;
+  transform-origin:  412px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(350px);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.menu-restaurant8.active li{
+  transform: rotate(calc(360deg /  8 * var(--i)));
+  position: absolute;
+  left: -196px;
+
+}
+
+.tooglees8{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu-restaurant8.active .tooglees8{
+  transform: rotate(360deg);
+}
+
+.menu-restaurant-container8{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reserva-tu-mesa8{
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  color: hsl(0, 0%, 100%);
+  font-size:30px;
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  background-color: green;
+}
+
+.container-menu-restaurante-logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 17%;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(255 255 255 / 25%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 176px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.containerApplazo{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageAplazzo{
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+#reserva-tu-mesa-img{
+  background-color: #CC3300 !important;
 }
